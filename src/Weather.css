@@ -1,6 +1,7 @@
 :root {
   --primary-color: #5c715e;
   --secondary-color: #f6f6f6;
+  --descriptive-color: #a7b99e;
 }
 body {
   font-family: var(--primary-font);
@@ -36,7 +37,7 @@ body {
 }
 .Weather h1:hover,
 h2:hover {
-  color: #a7b99e;
+  color: var(--descriptive-color);
   cursor: pointer;
   transition-delay: 100ms;
 }
@@ -60,4 +61,25 @@ h2:hover {
 }
 .Weather .description {
   margin-top: 30px;
+}
+@media (max-width: 600px) {
+  .Weather .btn {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .Weather .temperature strong {
+    font-size: 46px;
+  }
+  .Weather .temperature img {
+    width: 74px;
+    height: 74px;
+  }
+  .Weather .temperature img {
+    margin-right: 0px;
+  }
+  .Weather .temperature .units {
+    font-size: 12px;
+  }
 }
