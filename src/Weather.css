@@ -16,3 +16,27 @@ body {
   font-weight: 200;
   line-height: 50px;
 }
+.Weather h2 {
+  color: var(--primary-color);
+  font-weight: 100;
+}
+.Weather ul {
+  margin: 0;
+  padding: 0;
+}
+.Weather li {
+  list-style-type: none;
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 23px;
+}
+.Weather h1:hover,
+h2:hover {
+  color: #a7b99e;
+  cursor: pointer;
+  transition-delay: 100ms;
+}

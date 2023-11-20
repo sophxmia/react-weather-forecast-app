@@ -21,23 +21,33 @@ export default function Weather() {
       </form>
       <div className="row">
         <h2>Kyiv, Ukraine</h2>
-        <ul>
-          <li>Local time: 18:01</li>
-          <li>Monday 11/13/2023</li>
-        </ul>
+        <div>
+          <ul>
+            <li>Local time: 18:01</li>
+            <li>Monday 11/13/2023</li>
+          </ul>
+        </div>
         <div className="col-sm-8">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-            alt="Clear"
-          />
-          6°C
+          <div className="d-flex">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
+              alt="Clear"
+              className="img-fluid"
+            />
+            <div>
+              <strong>6</strong>
+              <span className="units"> °C | °F</span>
+            </div>
+          </div>
         </div>
         <div className="col-sm-4">
-          <ul>
-            <li>Description: Clear</li>
-            <li>Humidity: 5%</li>
-            <li>Wind: 2 km/h</li>
-          </ul>
+          <div className="weather-description">
+            <ul>
+              <li>Description: Clear</li>
+              <li>Humidity: 5%</li>
+              <li>Wind: 2 km/h</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
