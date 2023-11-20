@@ -40,3 +40,24 @@ h2:hover {
   cursor: pointer;
   transition-delay: 100ms;
 }
+.Weather .temperature {
+  margin-top: 30px;
+  margin-right: 20px;
+}
+.Weather .temperature img {
+  margin-right: 15px;
+}
+.Weather .temperature strong {
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 64px;
+}
+.Weather .temperature .units {
+  color: var(--primary-color);
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+.Weather .description {
+  margin-top: 30px;
+}

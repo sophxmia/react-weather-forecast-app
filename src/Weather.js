@@ -28,7 +28,7 @@ export default function Weather() {
           </ul>
         </div>
         <div className="col-sm-8">
-          <div className="d-flex">
+          <div className="d-flex temperature">
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
               alt="Clear"
@@ -41,7 +41,7 @@ export default function Weather() {
           </div>
         </div>
         <div className="col-sm-4">
-          <div className="weather-description">
+          <div className="description">
             <ul>
               <li>Description: Clear</li>
               <li>Humidity: 5%</li>
