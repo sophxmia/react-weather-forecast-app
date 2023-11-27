@@ -6,7 +6,7 @@ export default function App() {
     <div className="App">
       <div className="container-fluid">
         <Weather />
-        <footer>
+        <footer className="mt-5">
           Open-sourse project,{" "}
           <a
             href="https://github.com/sophxmia/react-weather-app"

@@ -1,4 +1,14 @@
+:root {
+  --footer-font: monospace;
+}
 .App {
-  max-width: 660px;
-  margin: 50px auto;
+  max-width: 600px;
+  margin: 0px auto;
+}
+.App footer {
+  font-size: 11px;
+  text-align: center;
+  font-family: var(--footer-font);
+  opacity: 0.6;
+  display: block;
 }

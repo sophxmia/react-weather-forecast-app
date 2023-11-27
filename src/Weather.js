@@ -14,7 +14,7 @@ export default function Weather() {
               className="form-control mb-3"
             />
           </div>
-          <div className="col-sm-2">
+          <div className="col-sm-2 mb-4">
             <input type="submit" value="Search" className="btn btn-primary" />
           </div>
         </div>
