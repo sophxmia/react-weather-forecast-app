@@ -1,7 +1,6 @@
 :root {
-  --primary-color: #5c715e;
-  --secondary-color: #f6f6f6;
-  --descriptive-color: #a7b99e;
+  --primary-color: #142d4c;
+  --descriptive-color: #385170;
 }
 body {
   font-family: var(--primary-font);
