@@ -3,7 +3,7 @@
 }
 .App {
   max-width: 600px;
-  margin: 50px auto;
+  margin: 10% auto;
 }
 .App footer {
   font-size: 11px;
@@ -11,4 +11,9 @@
   font-family: var(--footer-font);
   opacity: 0.6;
   display: block;
+}
+@media (max-width: 600px) {
+  .App {
+    margin: 10% auto;
+  }
 }
