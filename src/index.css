@@ -1,8 +1,8 @@
 :root {
   --primary-font: Arial, sans-serif;
-  --primary-background-color: f9f7fe;
+  --primary-background-image: url(./winter-nature.jpeg);
 }
 body {
   font-family: var(--primary-font);
-  background-color: var(--primary-background-color);
+  background-image: var(--primary-background-image);
 }
