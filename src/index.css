@@ -1,8 +1,16 @@
 :root {
-  --primary-font: Arial, sans-serif;
+  /* --primary-font: Arial, sans-serif; */
   --primary-background-image: url(./winter-nature.jpeg);
 }
 body {
-  font-family: var(--primary-font);
+  /* font-family: var(--primary-font); */
   background-image: var(--primary-background-image);
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
