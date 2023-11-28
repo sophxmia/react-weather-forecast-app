@@ -1,5 +1,6 @@
 :root {
   --primary-background-image: url(./winter-nature.jpeg);
+  --phone-background-image: url(./phone-winter.avif);
 }
 body {
   background-image: var(--primary-background-image);
@@ -8,4 +9,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 600px) {
+  body {
+    background-image: var(--phone-background-image);
+  }
 }
