@@ -24,7 +24,9 @@ export default function Weather() {
         <h2>Kyiv, Ukraine</h2>
         <div>
           <ul>
-            <li>Local time: 18:01</li>
+            <li>
+              Local time: <strong>18:01</strong>
+            </li>
             <li>Monday 11/13/2023</li>
           </ul>
         </div>
@@ -44,9 +46,15 @@ export default function Weather() {
         <div className="col-sm-4">
           <div className="description">
             <ul>
-              <li>Description: Clear</li>
-              <li>Humidity: 5%</li>
-              <li>Wind: 2 km/h</li>
+              <li>
+                Description: <strong>Clear</strong>
+              </li>
+              <li>
+                Humidity: <strong>5%</strong>
+              </li>
+              <li>
+                Wind: <strong>2 km/h</strong>
+              </li>
             </ul>
           </div>
         </div>
