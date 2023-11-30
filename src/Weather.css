@@ -2,6 +2,8 @@
   --primary-font: Arial, sans-serif;
   --primary-color: #142d4c;
   --descriptive-color: #385170;
+  --button-primary-color: #5c5470;
+  --button-hover-color: #7c73e6;
 }
 .Weather {
   background: transparent;
@@ -61,6 +63,14 @@ h2:hover {
 }
 .Weather .description {
   margin-top: 30px;
+}
+.Weather .btn-primary {
+  background-color: var(--button-primary-color);
+  border-color: var(--button-primary-color);
+}
+.Weather .btn-primary:hover {
+  background-color: var(--button-hover-color);
+  border-color: var(--button-hover-color);
 }
 @media (max-width: 600px) {
   .Weather .btn {
