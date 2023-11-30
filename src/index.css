@@ -1,6 +1,6 @@
 :root {
-  --primary-background-image: url(./winter-nature.jpeg);
-  --phone-background-image: url(./phone-winter.avif);
+  --primary-background-image: url(./img/winter-nature.jpeg);
+  --phone-background-image: url(./img/phone-winter.avif);
 }
 body {
   background-image: var(--primary-background-image);
