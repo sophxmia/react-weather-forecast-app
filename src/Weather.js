@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import FormatedDate from "./FormatedDate";
 import axious from "axios";
 import "./Weather.css";
 
-export default function Weather() {
+export default function Weather(props) {
   const [weather, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
     console.log(response.data);
@@ -10,7 +11,7 @@ export default function Weather() {
       ready: true,
       city: response.data.city,
       country: response.data.country,
-      time: response.data.time,
+      time: new Date(response.data.time * 1000),
       icon: response.data.condition.icon,
       iconUrl: response.data.condition.icon_url,
       temperature: response.data.temperature.current,
@@ -44,14 +45,7 @@ export default function Weather() {
           <h2>
             {weather.city}, {weather.country}
           </h2>
-          <div>
-            <ul>
-              <li>
-                Local time: <strong>18:01</strong>
-              </li>
-              <li>Monday 11/13/2023</li>
-            </ul>
-          </div>
+          <FormatedDate date={weather.time} />
           <div className="col-sm-8">
             <div className="d-flex temperature">
               <img
@@ -88,8 +82,7 @@ export default function Weather() {
     );
   } else {
     const apiKey = "0fdf1tcb941583e4e4o91cb9b04cef1a";
-    let city = "Kyiv";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}&units=metric`;
     axious.get(apiUrl).then(handleResponse);
 
     return "Loading...";
