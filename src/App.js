@@ -9,7 +9,7 @@ export default function App() {
         <footer className="mt-5">
           Open-sourse project,{" "}
           <a
-            href="https://github.com/sophxmia/react-weather-app"
+            href="https://github.com/sophxmia/react-weather-forecast-app"
             target="_blank"
             rel="noreferrer"
             title="GitHub link"
