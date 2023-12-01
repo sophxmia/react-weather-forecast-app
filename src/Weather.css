@@ -37,6 +37,10 @@
   font-size: 14px;
   line-height: 23px;
 }
+.Weather a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
 .Weather h1:hover,
 h2:hover {
   color: var(--descriptive-color);
