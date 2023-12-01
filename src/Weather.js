@@ -10,9 +10,14 @@ export default function Weather() {
     setWeatherData({
       city: response.data.city,
       country: response.data.country,
+      time: response.data.time,
+      icon: response.data.condition.icon,
+      iconUrl: response.data.condition.icon_url,
       temperature: response.data.temperature.current,
-      wind: 12,
-      descruption: "sunny",
+      feelsLike: response.data.temperature.feels_like,
+      description: response.data.condition.description,
+      humidity: response.data.temperature.humidity,
+      wind: response.data.wind.speed,
     });
     setReady(true);
   }
@@ -37,7 +42,9 @@ export default function Weather() {
           </div>
         </form>
         <div className="row">
-          <h2>Kyiv, Ukraine</h2>
+          <h2>
+            {weather.city}, {weather.country}
+          </h2>
           <div>
             <ul>
               <li>
@@ -49,8 +56,8 @@ export default function Weather() {
           <div className="col-sm-8">
             <div className="d-flex temperature">
               <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-                alt="Clear"
+                src={weather.iconUrl}
+                alt={weather.icon}
                 className="img-fluid"
               />
               <div>
@@ -63,16 +70,16 @@ export default function Weather() {
             <div className="description">
               <ul>
                 <li>
-                  Feels like: <strong>19°</strong>
+                  Feels like: <strong>{Math.round(weather.feelsLike)}°</strong>
                 </li>
                 <li>
-                  Description: <strong>Clear</strong>
+                  Description: <strong>{weather.description}</strong>
                 </li>
                 <li>
-                  Humidity: <strong>5%</strong>
+                  Humidity: <strong>{weather.humidity}%</strong>
                 </li>
                 <li>
-                  Wind: <strong>2 km/h</strong>
+                  Wind: <strong>{Math.round(weather.wind)} km/h</strong>
                 </li>
               </ul>
             </div>
