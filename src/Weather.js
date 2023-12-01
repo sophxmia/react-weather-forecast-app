@@ -1,7 +1,15 @@
 import React from "react";
+import axious from "axios";
 import "./Weather.css";
 
 export default function Weather() {
+  function handleResponse(response) {
+    console.log(response.data);
+  }
+  const apiKey = "0fdf1tcb941583e4e4o91cb9b04cef1a";
+  let city = "Kyiv";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units={metric}`;
+  axious.get(apiUrl).then(handleResponse);
   return (
     <div className="Weather">
       <h1 className="text-end mb-4">Weather App</h1>
