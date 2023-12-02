@@ -4,12 +4,13 @@
   --descriptive-color: #385170;
   --button-primary-color: #5c5470;
   --button-hover-color: #7c73e6;
+  --box-shadow-custom: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 .Weather {
   background: transparent;
   backdrop-filter: blur(10px);
   padding: 20px;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  box-shadow: var(--box-shadow-custom);
   border-radius: 10px;
 }
 .Weather h1 {

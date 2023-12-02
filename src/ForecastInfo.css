@@ -18,7 +18,7 @@
   margin-left: 5px;
 }
 .ForecastInfo .col:hover {
-  box-shadow: 0 10px 20px rgba(65, 50, 100, 0.08);
+  box-shadow: var(--box-shadow-custom);
   border-radius: 10px;
   cursor: pointer;
   transition-delay: 100ms;
