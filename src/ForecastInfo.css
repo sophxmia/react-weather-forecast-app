@@ -1,11 +1,25 @@
 .ForecastInfo {
   text-align: center;
+  margin-top: 40px;
+}
+.ForecastInfo-img {
+  height: 64px;
+  width: auto;
+}
+.ForecastInfo-day {
+  font-size: 16px;
+  color: var(--primary-color);
+}
+.ForecastInfo-temperatures {
+  font-size: 13px;
 }
 .ForecastInfo-temperature-min {
   opacity: 0.6;
   margin-left: 5px;
 }
-.ForecastInfo-img {
-  height: 64px;
-  width: auto;
+.ForecastInfo .col:hover {
+  box-shadow: 0 10px 20px rgba(65, 50, 100, 0.08);
+  border-radius: 10px;
+  cursor: pointer;
+  transition-delay: 100ms;
 }
