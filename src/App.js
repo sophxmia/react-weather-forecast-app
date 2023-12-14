@@ -1,5 +1,6 @@
 import Weather from "./Weather";
 import "./App.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 export default function App() {
   return (
