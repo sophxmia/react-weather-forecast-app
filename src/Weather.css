@@ -77,12 +77,29 @@ h2:hover {
   background-color: var(--button-hover-color);
   border-color: var(--button-hover-color);
 }
+
+@keyframes bounce {
+  0% {
+    transform: rotate3d(0);
+  }
+  100% {
+    transform: rotate3d(1, 2, 1, 360deg);
+  }
+}
+
+#weatherPicture {
+  animation: bounce 10s linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
 @media (max-width: 600px) {
   .Weather .btn {
     display: block;
     width: 100%;
   }
 }
+
 @media (max-width: 600px) {
   .Weather .temperature strong {
     font-size: 46px;
