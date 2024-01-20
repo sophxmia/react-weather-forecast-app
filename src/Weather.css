@@ -92,6 +92,20 @@ h2:hover {
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
+@keyframes bounceForecast {
+  0% {
+    transform: rotate3d(0);
+  }
+  100% {
+    transform: rotate3d(0, 2, 0, 360deg);
+  }
+}
+
+#forecastWeatherPicture{
+  animation: bounceForecast 10s linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
 
 @media (max-width: 600px) {
   .Weather .btn {
